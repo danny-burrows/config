@@ -1,6 +1,6 @@
 #!/bin/bash
 
-set -x
+#set -x
 
 repo_dir_path=$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )
 
@@ -22,4 +22,9 @@ config_source="$repo_dir_path/.tmux.conf"
 config_dest="$HOME/.tmux.conf"
 create_symlink_if_not_exists $config_source $config_dest
 
+for FILE in $(find "$repo_dir_path/.config" -type f); do
+    src=$FILE
+    dest="$HOME$(sed "s#$repo_dir_path##g" <<< $FILE)"
 
+    create_symlink_if_not_exists $src $dest
+done
