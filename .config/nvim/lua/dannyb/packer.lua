@@ -18,6 +18,8 @@ return require("packer").startup(function(use)
         requires = { {'nvim-lua/plenary.nvim'} }
     }
 
+    use { 'nvim-treesitter/nvim-treesitter' }
+
     use {
         'lewis6991/gitsigns.nvim', tag = 'release',
        config = function()

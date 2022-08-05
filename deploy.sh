@@ -1,7 +1,5 @@
 #!/bin/bash
 
-#set -x
-
 repo_dir_path=$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )
 
 create_symlink_if_not_exists () {
