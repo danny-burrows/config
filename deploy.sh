@@ -37,3 +37,7 @@ find "$repo_dir_path/fonts" -type f -print0 | while IFS= read -r -d '' src; do
     dest="$HOME/.local/share${src//$repo_dir_path/}"
     create_symlink_if_not_exists "$src" "$dest"
 done
+
+echo "Bootstrapping Packer Config"
+nvim --headless -c 'autocmd User PackerComplete quitall' -c 'PackerSync'
+
