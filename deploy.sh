@@ -8,6 +8,10 @@ create_symlink_if_not_exists () {
     source=$1
     destination=$2
 
+    # Ensure the directory structure exists.
+    mkdir -p $(dirname destination)
+
+    # Attempt to create the symlink if it doesnt exist.
     if [ -f "$destination" ]; then
         echo "Skipping: $destination already exists."
     elif ln -s $source $destination; then
