@@ -33,7 +33,6 @@ find "$repo_dir_path/.config" -type f -print0 | while IFS= read -r -d '' src; do
 done
 
 # Fonts
-#   NOTE: I think "~/.local/share/fonts" maybe only works on Ubuntu.
 find "$repo_dir_path/fonts" -type f -print0 | while IFS= read -r -d '' src; do
     dest="$HOME/.local/share${src//$repo_dir_path/}"
     create_symlink_if_not_exists "$src" "$dest"
