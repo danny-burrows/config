@@ -7,7 +7,7 @@ create_symlink_if_not_exists () {
     destination=$2
     
     # Ensure the directory structure exists.
-    mkdir -p $(bash -c "dirname $destination")
+    mkdir -p "$(bash -c "dirname $destination")"
 
     # Attempt to create the symlink if it doesnt exist.
     if [ -f "$destination" ]; then
