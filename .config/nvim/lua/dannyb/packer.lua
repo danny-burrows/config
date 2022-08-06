@@ -12,6 +12,9 @@ return require('packer').startup(function(use)
     use { 'wbthomason/packer.nvim' }
     use { 'ellisonleao/gruvbox.nvim' }
 
+    -- Configs for Nvim LSP
+    use 'neovim/nvim-lspconfig'
+
     -- Telescope search and grepping.
     use {
         'nvim-telescope/telescope.nvim', tag = '0.1.0',
