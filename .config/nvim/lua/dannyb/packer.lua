@@ -7,17 +7,16 @@ if fn.empty(fn.glob(install_path)) > 0 then
   vim.cmd [[packadd packer.nvim]]
 end
 
-return require("packer").startup(function(use)
+return require('packer').startup(function(use)
 
-    use { "wbthomason/packer.nvim" }
-    use { "ellisonleao/gruvbox.nvim" }
+    use { 'wbthomason/packer.nvim' }
+    use { 'ellisonleao/gruvbox.nvim' }
 
     -- Telescope search and grepping.
     use {
         'nvim-telescope/telescope.nvim', tag = '0.1.0',
         requires = { {'nvim-lua/plenary.nvim'} }
     }
-
     use { 'nvim-treesitter/nvim-treesitter' }
 
     use {
@@ -26,7 +25,6 @@ return require("packer").startup(function(use)
             require('gitsigns').setup {
                 signcolumn = false,
                 numhl = true,
-
                 current_line_blame = true,
             }
         end
