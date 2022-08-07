@@ -33,6 +33,12 @@ return require('packer').startup(function(use)
         end
     }
 
+    -- Bufferline (Tabs)
+    use {'akinsho/bufferline.nvim', tag = "v2.*"}
+
+    -- Nvim Tree
+    use { 'kyazdani42/nvim-tree.lua', tag = 'nightly' }
+
     if packer_bootstrap then
         require('packer').sync()
     end

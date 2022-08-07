@@ -16,3 +16,25 @@ vim.opt.expandtab = true
 vim.opt.background = "dark"
 vim.cmd([[colorscheme gruvbox]])
 
+-- Bufferline
+vim.opt.termguicolors = true
+require("bufferline").setup {
+    options = {
+        buffer_close_icon = 'X',
+        close_icon = 'X',
+    }
+}
+
+-- Nvim tree
+require("nvim-tree").setup {
+    renderer = { 
+        icons = { 
+            show = { 
+	            file = false,
+	            folder = false,
+                folder_arrow = false
+            }
+        }
+    }
+}
+
