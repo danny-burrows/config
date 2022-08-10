@@ -11,3 +11,6 @@ vim.keymap.set("n", "<Leader>p", "\"+p")
 
 vim.keymap.set("n", "<Leader>e", ":Ex<CR>")
 
+-- Nvim Tree
+vim.keymap.set("n", "<Leader>[", ":NvimTreeToggle<CR>")
+vim.keymap.set("n", "<Leader>]", ":NvimTreeFocus<CR>")
