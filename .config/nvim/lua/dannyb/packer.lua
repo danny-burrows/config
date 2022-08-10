@@ -15,6 +15,8 @@ return require('packer').startup(function(use)
     -- Configs for Nvim LSP
     use 'neovim/nvim-lspconfig'
 
+    use 'simrat39/rust-tools.nvim'
+
     -- Telescope search and grepping.
     use {
         'nvim-telescope/telescope.nvim', tag = '0.1.0',
