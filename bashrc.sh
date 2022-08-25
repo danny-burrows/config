@@ -1,10 +1,10 @@
 # dannys-custom-config
 
-alias vim=nvim
+alias vim='nvim'
 
-alias v=vim
-alias g=git
-alias gs=git status
+alias v='vim'
+alias g='git'
+alias gs='git status'
 
 # Start tmux if not already open
 if command -v tmux &> /dev/null && [ -n "$PS1" ] && [[ ! "$TERM" =~ screen ]] && [[ ! "$TERM" =~ tmux         ]] && [ -z "$TMUX" ]; then
