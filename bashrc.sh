@@ -1,5 +1,7 @@
 # dannys-custom-config
 
+set -o vi
+
 alias vim='nvim'
 
 alias v='vim'
