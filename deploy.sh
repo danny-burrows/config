@@ -47,6 +47,10 @@ BASHRC="$HOME/.bashrc"
 if $(grep -qxF '# dannys-custom-config' $BASHRC); then
     echo "Skipping: Found config settings."
 else
-    cat "$repo_dir_path/bashrc.sh" >> $BASHRC
+    cat "$repo_dir_path/bashrc" >> $BASHRC
 fi
 
+printf "\nConfig .inputrc\n"
+config_source="$repo_dir_path/inputrc"
+config_dest="$HOME/.inputrc"
+create_symlink_if_not_exists "$config_source" "$config_dest"
