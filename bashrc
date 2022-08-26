@@ -7,6 +7,7 @@ alias vim='nvim'
 alias v='vim'
 alias g='git'
 alias gs='git status'
+alias gd='git diff'
 
 # Default editors
 export EDITOR='vim'
