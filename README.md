@@ -13,3 +13,5 @@ Some programs that are either required or enhance the config.
 - fd (Telescope)
 - ripgrep (Telescope livegrep)
 - shellcheck (Bash linting)
+
+Note: ripgrep and fd should be installed with cargo to work properly with the nvim config.
