@@ -5,6 +5,7 @@ My config for tmux and nvim.
 Some programs that are either required or enhance the config.
 
 ### Required
+- xclip - Needed to ensure tmux can copy on drag!
 - [rust-analyzer](https://github.com/rust-lang/rust-analyzer)
 - [Bash LSP](https://github.com/bash-lsp/bash-language-server)
 
