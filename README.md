@@ -10,6 +10,7 @@ Some programs that are either required or enhance the config.
 - [Bash LSP](https://github.com/bash-lsp/bash-language-server)
 
 ### Recommended
+- kitty (A super fast terminal emulator)
 - fd (Telescope)
 - ripgrep (Telescope livegrep)
 - shellcheck (Bash linting)
