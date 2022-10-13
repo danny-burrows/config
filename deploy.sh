@@ -50,10 +50,10 @@ else
     cat "$repo_dir_path/bashrc" >> $BASHRC
 fi
 
-printf "\nConfig .inputrc\n"
-config_source="$repo_dir_path/inputrc"
-config_dest="$HOME/.inputrc"
-create_symlink_if_not_exists "$config_source" "$config_dest"
+# printf "\nConfig .inputrc\n"
+# config_source="$repo_dir_path/inputrc"
+# config_dest="$HOME/.inputrc"
+# create_symlink_if_not_exists "$config_source" "$config_dest"
 
 printf "\nConfig kitty\n"
 config_source="$repo_dir_path/.config/kitty/kitty.conf"
