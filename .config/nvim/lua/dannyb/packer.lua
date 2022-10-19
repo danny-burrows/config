@@ -41,6 +41,9 @@ return require('packer').startup(function(use)
     -- Nvim Tree
     use { 'kyazdani42/nvim-tree.lua', tag = 'nightly' }
 
+    -- Multiple cursors
+    use { 'mg979/vim-visual-multi' }
+
     if packer_bootstrap then
         require('packer').sync()
     end
