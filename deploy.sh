@@ -21,9 +21,7 @@ create_symlink_if_not_exists () {
 
 # Tmux config
 printf "Tmux Config\n"
-config_source="$repo_dir_path/.tmux.conf"
-config_dest="$HOME/.tmux.conf"
-create_symlink_if_not_exists "$config_source" "$config_dest"
+create_symlink_if_not_exists "$repo_dir_path/.tmux.conf" "$HOME/.tmux.conf"
 
 # Nvim config
 printf "\nNvim Config\n"
@@ -50,16 +48,6 @@ else
     cat "$repo_dir_path/bashrc" >> $BASHRC
 fi
 
-# printf "\nConfig .inputrc\n"
-# config_source="$repo_dir_path/inputrc"
-# config_dest="$HOME/.inputrc"
-# create_symlink_if_not_exists "$config_source" "$config_dest"
-
 printf "\nConfig kitty\n"
-config_source="$repo_dir_path/.config/kitty/kitty.conf"
-config_dest="$HOME/.config/kitty/kitty.conf"
-create_symlink_if_not_exists "$config_source" "$config_dest"
-
-config_source="$repo_dir_path/.config/kitty/gruvbox_dark.conf"
-config_dest="$HOME/.config/kitty/gruvbox_dark.conf"
-create_symlink_if_not_exists "$config_source" "$config_dest"
+create_symlink_if_not_exists "$repo_dir_path/.config/kitty/kitty.conf"        "$HOME/.config/kitty/kitty.conf"
+create_symlink_if_not_exists "$repo_dir_path/.config/kitty/gruvbox_dark.conf" "$HOME/.config/kitty/gruvbox_dark.conf"

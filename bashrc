@@ -1,6 +1,4 @@
-# dannys-custom-config
-
-# set -o vi
+# BEGIN dannys-custom-config
 
 alias vim='nvim'
 
@@ -14,7 +12,7 @@ export EDITOR='vim'
 export VISUAL='vim'
 
 # Start tmux if not already open
-if command -v tmux &> /dev/null && [ -n "$PS1" ] && [[ ! "$TERM" =~ screen ]] && [[ ! "$TERM" =~ tmux         ]] && [ -z "$TMUX" ]; then
+if command -v tmux &> /dev/null && [ -n "$PS1" ] && [[ ! "$TERM" =~ screen ]] && [[ ! "$TERM" =~ tmux ]] && [ -z "$TMUX" ]; then
   exec tmux
 fi
 
@@ -24,4 +22,6 @@ fi
 export CICD_DOCKER_BUILD_NO_SQUASH=1
 
 alias dev='ssh gcc-dev'
+
+# END dannys-custom-config
 
