@@ -42,7 +42,7 @@ nvim --headless -c 'autocmd User PackerComplete quitall' -c 'PackerSync'
 
 printf "\nConfig .bashrc\n"
 BASHRC="$HOME/.bashrc"
-if $(grep -qxF '# dannys-custom-config' $BASHRC); then
+if $(grep -qxF '# BEGIN dannys-custom-config ########################################' $BASHRC); then
     echo "Skipping: Found config settings."
 else
     cat "$repo_dir_path/bashrc" >> $BASHRC

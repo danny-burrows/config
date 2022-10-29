@@ -25,7 +25,7 @@ return require('packer').startup(function(use)
     use { 'nvim-treesitter/nvim-treesitter' }
 
     use {
-        'lewis6991/gitsigns.nvim', tag = 'release',
+        'lewis6991/gitsigns.nvim', tag = 'v0.5',
        config = function()
             require('gitsigns').setup {
                 signcolumn = false,

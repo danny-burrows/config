@@ -1,4 +1,4 @@
-# BEGIN dannys-custom-config
+# BEGIN dannys-custom-config ########################################
 
 alias vim='nvim'
 
@@ -16,12 +16,17 @@ if command -v tmux &> /dev/null && [ -n "$PS1" ] && [[ ! "$TERM" =~ screen ]] &&
   exec tmux
 fi
 
-# Work Stuff
+# Try enable bash completion for git
+source /usr/share/bash-completion/completions/git
+
+## BEGIN Work Stuff #################################################
 
 # Dont build squshed images
 export CICD_DOCKER_BUILD_NO_SQUASH=1
 
 alias dev='ssh gcc-dev'
 
-# END dannys-custom-config
+## END Work Stuff ###################################################
+
+# END dannys-custom-config ##########################################
 
