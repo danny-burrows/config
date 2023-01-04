@@ -32,6 +32,14 @@ export CICD_DOCKER_BUILD_NO_SQUASH=1
 
 alias dev='ssh gcc-dev'
 
+alias slurm-worker-green-1="(cd /home/dannyb/projects/core-infra && ./scripts/core-credentials-ssh.sh manager@slurm-worker-green-1.core.genomicsplc.com)"
+alias crunch-wes-backend="(cd /home/dannyb/projects/core-infra && ./scripts/core-credentials-ssh.sh manager@crunch-wes-backend.core.genomicsplc.com)"
+alias card-catalog-wes-backend="(cd /home/dannyb/projects/core-infra && ./scripts/core-credentials-ssh.sh manager@card-catalog-wes-backend.core.genomicsplc.com)"
+alias card-catalog="(cd /home/dannyb/projects/core-infra && ./scripts/core-credentials-ssh.sh manager@card-catalog.core.genomicsplc.com)"
+
+alias vpn="${HOME}/vpn.sh"
+alias vpnkill="${HOME}/vpnkill.sh"
+
 ## END Work Stuff ###################################################
 
 # END dannys-custom-config ##########################################
